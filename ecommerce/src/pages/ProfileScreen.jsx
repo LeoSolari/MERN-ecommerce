@@ -25,9 +25,7 @@ const ProfileScreen = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const [{ loadingUpdate }, dispatch] = useReducer(reducer, {
-    loadingUpdate: false,
-  });
+  const [dispatch] = useReducer(reducer);
 
   const submitHandler = async (e) => {
     e.preventDefault();

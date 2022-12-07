@@ -9,7 +9,7 @@ function classNames(...classes) {
 }
 
 export default function Example({ title }) {
-  const { store, dispatch: ctxDispatch } = useContext(Store);
+  const { dispatch: ctxDispatch } = useContext(Store);
 
   const signOutHandler = () => {
     ctxDispatch({ type: "USER_SIGNOUT" });
