@@ -1,0 +1,16 @@
+{
+  "name": "merncommerce",
+  "version": "1.0.0",
+  "description": "ecommerce with mern",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../ecommerce && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mern"
+  ],
+  "author": "Leo Solari",
+  "license": "ISC"
+}
