@@ -1,6 +1,7 @@
 {
   "name": "merncommerce",
   "version": "1.0.0",
+  "type": "module",
   "description": "ecommerce with mern",
   "main": "index.js",
   "scripts": {

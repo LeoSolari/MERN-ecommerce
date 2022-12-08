@@ -29,8 +29,8 @@ function App() {
         <ToastContainer position="bottom-center" limit={1} />
         <div className="bg-black text-white p-4">
           <div className="text-center flex justify-center">
-            <Link to="/" className="text-3xl font-bold  bg-red-500">
-              E-COMMERCE PAGE
+            <Link to="/" className="text-3xl font-bold ">
+              Little shop
             </Link>
           </div>
           <div className="flex justify-between">
