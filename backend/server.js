@@ -16,7 +16,6 @@ mongoose
   })
   .catch((err) => {
     console.log(err.message);
-    console.log("hi");
   });
 
 const app = express();
@@ -42,7 +41,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
 
-const PORT = `0.0.0.0$PORT`;
+const PORT = "0.0.0.0";
 app.listen(PORT, () => {
   console.log(`Running at http://localhost:${PORT}`);
 });
