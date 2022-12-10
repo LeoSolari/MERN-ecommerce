@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
 
-const PORT = "0.0.0.0";
+const PORT = `0.0.0.0:${PORT}`;
 app.listen(PORT, () => {
   console.log(`Running at http://localhost:${PORT}`);
 });
