@@ -10,7 +10,7 @@ import orderRouter from "./routes/orderRoutes.js";
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGODB_URI)
+  .connect("mongodb://localhost/ecommerce")
   .then(() => {
     console.log("connected to db");
   })
@@ -42,7 +42,7 @@ app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
 
-const PORT = "0.0.0.0";
+const PORT = `0.0.0.0$PORT`;
 app.listen(PORT, () => {
   console.log(`Running at http://localhost:${PORT}`);
 });
